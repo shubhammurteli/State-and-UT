@@ -47,7 +47,7 @@ p{
     border-radius: 5px;;
 }
 #json-data{
-    overflow: auto;
+    overflow-y: auto;
     height: 70vh;
     width: 60vw;
     margin: auto;
@@ -56,7 +56,9 @@ p{
 #json-data::-webkit-scrollbar{
     display: none;
 }
-
+#json{
+    overflow: hidden;
+}
 .container p{
     margin: 10px 0px; 
     font-size: 3rem;

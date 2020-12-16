@@ -7,19 +7,11 @@ async function getQuotes() {
         console.log(error);
     }
 }
-let htmlText = document.getElementById("json-data")
+let htmlText = document.getElementById("json")
 async function quotesPrint() {
     var quotes = await getQuotes();
-    let data = ''
-    Object.keys(quotes).forEach(key =>{
-        console.log(quotes[key].length)
-        quotes[key].forEach(entry =>{
-            data += `<pre>${JSON.stringify(entry,undefined,"\t")}<pre>`
-            
-        })
-    })
-    // htmlText.innerHTML = JSON.stringify(quotes, undefined, 2);
-    htmlText.innerHTML = data;
+
+    htmlText.innerHTML = JSON.stringify(quotes, undefined, "\t");
 
 }
 quotesPrint()

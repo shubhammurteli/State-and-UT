@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>States and UT location JSON file</title>
     <link rel="stylesheet" href="resources/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/prettify.css">
+    <script type="text/javascript" src="resources/prettify.js"></script>
+
 </head>
-<body>
+<body onload="PR.prettyPrint()">
     <div class = "container">
-        <p class = "black-bg round-border">States and Union territories of India</p>
+        <p class = "round-border black-bg" id = "heading">States and Union territories of India</p>
         <div id="json-data" class = "round-border black-bg">
-                <pre class="prettyprint">
+                <pre class="prettyprint" id = "json">
                 </pre>
         </div>
         <div class="download">
@@ -21,7 +24,7 @@
     </div>
     <script src="resources/index.js"></script>
     <!-- <a href="./resources/text.txt" download>Click to download</a> -->
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&amp;skin=sunburst"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&amp;skin=sunburst"></script> -->
 
 </body>
 </html>
